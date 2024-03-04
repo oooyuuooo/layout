@@ -3222,10 +3222,10 @@ textarea {
   right: 15px;
   top: 7px;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   font-family: "Font Awesome 5 Pro";
-  content: "\f105";
+  content: "\203A";
   color: #F8F8FF;
   visibility: hidden;
   opacity: 0;

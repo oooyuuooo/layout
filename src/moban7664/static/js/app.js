@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
     _body: document.body,
     _html: document.documentElement,
 
-    i: function () {
+    i: function (e) {
       Init.s();
       Init.methods();
     },
 
     s: function () {
-      (this._window = window),
-        (this._document = document),
-        (this._body = document.body),
-        (this._html = document.documentElement);
+      this._window = window;
+      this._document = document;
+      this._body = document.body;
+      this._html = document.documentElement;
     },
-
+    
     methods: function () {
       Init.w();
       Init.BackToTop();
@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this._window.addEventListener("load", Init.l);
       this._window.addEventListener("scroll", Init.res);
     },
+    
 
     // Back To Top
     BackToTop: function () {
@@ -120,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
           let educateTilt = self.tilt(
             "object" === typeof options ? options : JSON.parse(options)
           );
-          console.log(educateTilt)
         });
       }
     },
@@ -128,44 +128,40 @@ document.addEventListener("DOMContentLoaded", function () {
     // Header
     header: function () {
       function dynamicCurrentMenuClass(selector) {
-          let FileName = window.location.href.split("/").reverse()[0];
-  
-          selector.querySelectorAll("li").forEach(function (li) {
-              let anchor = li.querySelector("a");
-              if (anchor && anchor.getAttribute("href") == FileName) {
-                  li.classList.add("current");
-              }
-          });
-          selector.querySelectorAll("li").forEach(function (li) {
-              if (li.querySelector(".current")) {
-                  li.classList.add("current");
-              }
-          });
-          if (FileName === "") {
-              selector.querySelectorAll("li")[0].classList.add("current");
+        let FileName = window.location.href.split("/").reverse()[0];
+
+        selector.find("li").each(function () {
+          let anchor = $(this).find("a");
+          if ($(anchor).attr("href") == FileName) {
+            $(this).addClass("current");
           }
+        });
+        selector.children("li").each(function () {
+          if ($(this).find(".current").length) {
+            $(this).addClass("current");
+          }
+        });
+        if ("" == FileName) {
+          selector.find("li").eq(0).addClass("current");
+        }
       }
-  
-      if (document.querySelector(".main-menu__list")) {
-          let mainNavUL = document.querySelector(".main-menu__list");
-          dynamicCurrentMenuClass(mainNavUL);
+
+      if ($(".main-menu__list").length) {
+        let mainNavUL = $(".main-menu__list");
+        dynamicCurrentMenuClass(mainNavUL);
       }
-  
-      if (
-          document.querySelector(".main-menu__nav") &&
-          document.querySelector(".mobile-nav__container")
-      ) {
-          let navContent = document.querySelector(".main-menu__nav").innerHTML;
-          let mobileNavContainer = document.querySelector(".mobile-nav__container");
-          mobileNavContainer.innerHTML = navContent;
+
+      if ($(".main-menu__nav").length && $(".mobile-nav__container").length) {
+        let navContent = document.querySelector(".main-menu__nav").innerHTML;
+        let mobileNavContainer = document.querySelector(".mobile-nav__container");
+        mobileNavContainer.innerHTML = navContent;
       }
-  
-      if (document.querySelector(".sticky-header__content")) {
-          let navContent = document.querySelector(".main-menu").innerHTML;
-          let mobileNavContainer = document.querySelector(".sticky-header__content");
-          mobileNavContainer.innerHTML = navContent;
+      if ($(".sticky-header__content").length) {
+        let navContent = document.querySelector(".main-menu").innerHTML;
+        let mobileNavContainer = document.querySelector(".sticky-header__content");
+        mobileNavContainer.innerHTML = navContent;
       }
-  
+
       if ($(".mobile-nav__container .main-menu__list").length) {
         let dropdownAnchor = $(
           ".mobile-nav__container .main-menu__list .dropdown > a"
@@ -174,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let self = $(this);
           let toggleBtn = document.createElement("BUTTON");
           toggleBtn.setAttribute("aria-label", "dropdown toggler");
-          toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+          toggleBtn.innerHTML = "<i class='fa-solid fa-angle-down'></i>";
           self.append(function () {
             return toggleBtn;
           });
@@ -187,36 +183,36 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         });
       }
-  
-      if (document.querySelector(".mobile-nav__toggler")) {
-          document.querySelector(".mobile-nav__toggler").addEventListener("click", function (e) {
-              e.preventDefault();
-              document.querySelector(".mobile-nav__wrapper").classList.toggle("expanded");
-              document.body.classList.toggle("locked");
-          });
+
+      if ($(".mobile-nav__toggler").length) {
+        $(".mobile-nav__toggler").on("click", function (e) {
+          e.preventDefault();
+          $(".mobile-nav__wrapper").toggleClass("expanded");
+          $("body").toggleClass("locked");
+        });
       }
-  
-      window.addEventListener("scroll", function () {
-          if (document.querySelector(".stricked-menu")) {
-              var headerScrollPos = 130;
-              var stricky = document.querySelector(".stricked-menu");
-              if (window.pageYOffset > headerScrollPos) {
-                  stricky.classList.add("stricky-fixed");
-              } else if (window.pageYOffset <= headerScrollPos) {
-                  stricky.classList.remove("stricky-fixed");
-              }
+
+      $(window).on("scroll", function () {
+        if ($(".stricked-menu").length) {
+          var headerScrollPos = 130;
+          var stricky = $(".stricked-menu");
+          if ($(window).scrollTop() > headerScrollPos) {
+            stricky.addClass("stricky-fixed");
+          } else if ($(this).scrollTop() <= headerScrollPos) {
+            stricky.removeClass("stricky-fixed");
           }
+        }
       });
-  },
+    },
   
     // Search Toggle
     searchToggle: function () {
-      if (document.querySelector(".search-toggler")) {
-        document.querySelector(".search-toggler").addEventListener("click", function (e) {
+      if ($(".search-toggler").length) {
+        $(".search-toggler").on("click", function (e) {
           e.preventDefault();
-          document.querySelector(".search-popup").classList.toggle("active");
-          document.querySelector(".mobile-nav__wrapper").classList.remove("expanded");
-          document.body.classList.toggle("locked");
+          $(".search-popup").toggleClass("active");
+          $(".mobile-nav__wrapper").removeClass("expanded");
+          $("body").toggleClass("locked");
         });
       }
     },
@@ -236,96 +232,90 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     passengerBox: function () {
-      if (document.querySelector(".pessenger-box")) {
-        var passengerBox = document.querySelector(".pessenger-box");
+      if($('.pessenger-box').length){
+      var $div = $('.pessenger-box');
 
-        Init._document.addEventListener("click", function (event) {
-          var isClickInsideDiv =
-            passengerBox === event.target || passengerBox.contains(event.target);
-          var isClickInsideButton = event.target.classList.contains("seat-booking");
-
-          if (!isClickInsideDiv && !isClickInsideButton) {
-            passengerBox.style.display = "none";
-          }
-        });
-
-        document.querySelector(".seat-booking").addEventListener("click", function () {
-          passengerBox.style.display = "block";
-        });
-
-        document.querySelector(".increment").addEventListener("click", function () {
-          var adult = +document.getElementById("adult").value;
-          var child = +document.getElementById("child").value;
-          var infant = +document.getElementById("infant").value;
-
-          var total = adult + child + infant;
-
-          document.querySelector(".total-pasenger").textContent = total;
-        });
-
-        document.querySelector(".decrement").addEventListener("click", function () {
-          var adult = +document.getElementById("adult").value;
-          var child = +document.getElementById("child").value;
-          var infant = +document.getElementById("infant").value;
-
-          var total = adult + child + infant;
-
-          document.querySelector(".total-pasenger").textContent = total;
-        });
-
-        document.querySelectorAll(".radio-button").forEach(function (radioButton) {
-          radioButton.addEventListener("click", function () {
-            var selectedClass = radioButton.value;
-            document.querySelector(".pasenger-class").textContent = selectedClass;
-          });
-        });
-      }
-    },
-
-    roomBox: function () {
-      var roomBox = document.querySelector(".room-box");
-
-      Init._document.addEventListener("click", function (event) {
-        var isClickInsideDiv = roomBox === event.target || roomBox.contains(event.target);
-        var isClickInsideButton = event.target.classList.contains("room-booking");
-
+  
+      $(document).on('click', function(event) {
+        var isClickInsideDiv = $div.is(event.target) || $div.has(event.target).length > 0;
+        var isClickInsideButton = $(event.target).is('.seat-booking');
+  
         if (!isClickInsideDiv && !isClickInsideButton) {
-          roomBox.style.display = "none";
+          $div.hide('slow');
         }
       });
 
-      if (document.querySelector(".room-box")) {
-        document.querySelector(".room-booking").addEventListener("click", function () {
-          roomBox.style.display = "block";
-        });
+        $('.seat-booking').on('click',function(){
+          $('.pessenger-box').show('slow');
+        })
 
-        document.querySelector(".increment").addEventListener("click", function () {
-          var adult = +document.getElementById("adult").value;
-          var child = +document.getElementById("child").value;
-          var infant = +document.getElementById("infant").value;
+        $('.increment').on('click',function(){
+          var adult = +$('#adult').val();
+          var child = +$('#child').val();
+          var infant = +$('#infant').val();
+          
+          var total = adult+child+infant;
 
-          var total = adult + child + infant;
+          $('.total-pasenger').text(total)
+        })
+        $('.decrement').on('click',function(){
+          var adult = +$('#adult').val();
+          var child = +$('#child').val();
+          var infant = +$('#infant').val();
+          
+          var total = adult+child+infant;
 
-          document.querySelector(".total-pasenger").textContent = total;
-        });
-
-        document.querySelector(".decrement").addEventListener("click", function () {
-          var adult = +document.getElementById("adult").value;
-          var child = +document.getElementById("child").value;
-          var infant = +document.getElementById("infant").value;
-
-          var total = adult + child + infant;
-
-          document.querySelector(".total-pasenger").textContent = total;
-        });
-
-        document.querySelectorAll(".radio-button").forEach(function (radioButton) {
-          radioButton.addEventListener("click", function () {
-            var selectedClass = radioButton.value;
-            document.querySelector(".pasenger-class").textContent = selectedClass;
-          });
-        });
+          $('.total-pasenger').text(total)
+        })
+        $('.radio-button').on('click',function(){
+          var $this = $(this).val();
+          $('.pasenger-class').text($this);
+        })
       }
+
+    },
+
+    roomBox: function () {
+      var $div = $('.room-box');
+
+  
+      // Event listener to hide the div when clicking outside it
+      $(document).on('click', function(event) {
+        var isClickInsideDiv = $div.is(event.target) || $div.has(event.target).length > 0;
+        var isClickInsideButton = $(event.target).is('.room-booking');
+  
+        if (!isClickInsideDiv && !isClickInsideButton) {
+          $div.hide('slow');
+        }
+      });
+      if($('.room-box').length){
+        $('.room-booking').on('click',function(){
+          $('.room-box').show('slow');
+        })
+        $('.increment').on('click',function(){
+          var adult = +$('#adult').val();
+          var child = +$('#child').val();
+          var infant = +$('#infant').val();
+          
+          var total = adult+child+infant;
+
+          $('.total-pasenger').text(total)
+        })
+        $('.decrement').on('click',function(){
+          var adult = +$('#adult').val();
+          var child = +$('#child').val();
+          var infant = +$('#infant').val();
+          
+          var total = adult+child+infant;
+
+          $('.total-pasenger').text(total)
+        })
+        $('.radio-button').on('click',function(){
+          var $this = $(this).val();
+          $('.pasenger-class').text($this);
+        })
+      }
+
     },
 
     jsSlider: function () {
@@ -345,24 +335,23 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     quantityHandle: function () {
-      document.querySelector(".decrement").addEventListener("click", function () {
-        var qtyInput = document.querySelector(".quantity-wrap .number");
-        var qtyVal = parseInt(qtyInput.value);
+      $(".decrement").on("click", function () {
+        var qtyInput = $(this).closest(".quantity-wrap").children(".number");
+        var qtyVal = parseInt(qtyInput.val());
         if (qtyVal > 0) {
-          qtyInput.value = qtyVal - 1;
+          qtyInput.val(qtyVal - 1);
         }
       });
-
-      document.querySelector(".increment").addEventListener("click", function () {
-        var qtyInput = document.querySelector(".quantity-wrap .number");
-        var qtyVal = parseInt(qtyInput.value);
-        qtyInput.value = qtyVal + 1;
+      $(".increment").on("click", function () {
+        var qtyInput = $(this).closest(".quantity-wrap").children(".number");
+        var qtyVal = parseInt(qtyInput.val());
+        qtyInput.val(parseInt(qtyVal + 1));
       });
     },
 
-    initializeSlick: function () {
-      if (document.querySelector(".flight-card-slider")) {
-        document.querySelector(".flight-card-slider").slick({
+    initializeSlick: function (e) {
+      if ($(".flight-card-slider").length) {
+        $(".flight-card-slider").slick({
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
@@ -401,9 +390,8 @@ document.addEventListener("DOMContentLoaded", function () {
           ],
         });
       }
-
-      if (document.querySelector(".hotel-image-slider")) {
-        document.querySelector(".hotel-image-slider").slick({
+      if ($(".hotel-image-slider").length) {
+        $(".hotel-image-slider").slick({
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -411,11 +399,13 @@ document.addEventListener("DOMContentLoaded", function () {
           dots: false,
           autoplay: true,
           autoplaySpeed: 4000,
+          responsive: [
+            
+          ],
         });
       }
-
-      if (document.querySelector(".testimonial-slider")) {
-        document.querySelector(".testimonial-slider").slick({
+      if ($(".testimonial-slider").length) {
+        $(".testimonial-slider").slick({
           infinite: true,
           autoplay: false,
           slidesToShow: 1,
@@ -627,14 +617,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
 
-    timepicker: function () {
-      if (document.querySelector(".timepicker")) {
-        document.querySelectorAll(".timepicker").flatpickr({
-          enableTime: true,
-          noCalendar: true,
-          dateFormat: "H:i",
+    timepicker:function(){
+      $(document).ready(function () {
+        $('.timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 60,
+            minTime: '10',
+            maxTime: '6:00pm',
+            defaultTime: '11',
+            startTime: '10:00',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: false
         });
-      }
+    });
+
     },
 
     filterToggle: function () {
@@ -720,7 +717,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     },
-
+    videoPlay:function(){
+      $('#videoModal').on('hidden.bs.modal', function () {
+        $('#videoModal video').get(0).pause();
+      });
+      $("#closeVideoModalButton").click(function() {
+        $("#videoModal").modal("hide");
+      });
+    },
     VideoPlayer: function () {
       if (document.getElementById("background-video")) {
         var player = new Plyr("#background-video", {

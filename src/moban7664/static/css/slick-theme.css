@@ -85,7 +85,9 @@
 }
 .slick-prev:before
 {
-    content: "\f104";
+    content: "\2039";
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -103,7 +105,9 @@
 }
 .slick-next:before
 {
-    content: "\f105";
+    content:"\203A";
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 [dir='rtl'] .slick-next:before
 {

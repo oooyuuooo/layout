@@ -34,13 +34,17 @@
 
                             <div class="main-menu__nav">
                                 <ul class="main-menu__list">
-                                    <li><a href="" class="active">Home</a></li>
+                                    <li>
+                                        <a href="" class="active">SparkleAir</a>
+                                    </li>
                                     <li class="dropdown">
-                                        <a href="javascript:void(0);">Flight</a>
+                                        <a href="javascript:void(0);"
+                                            >預定行程</a
+                                        >
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="flight-listing.html"
-                                                    >Flight Listing</a
+                                                    >搜尋航班</a
                                                 >
                                             </li>
                                             <li>
@@ -51,7 +55,9 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="javascript:void(0);">Car</a>
+                                        <a href="javascript:void(0);"
+                                            >準備啟程</a
+                                        >
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="car-listing.html"
@@ -71,7 +77,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="javascript:void(0);">Hotel</a>
+                                        <a href="javascript:void(0);">關於</a>
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="hotel-listing.html"
@@ -124,7 +130,9 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="javascript:void(0);">News</a>
+                                        <a href="javascript:void(0);"
+                                            >最新消息</a
+                                        >
                                         <ul>
                                             <li>
                                                 <a href="blog-listing.html"
@@ -146,26 +154,26 @@
                                 href="#"
                                 class="main-menu__search search-toggler d-xl-flex d-none"
                             >
-                                <i class="fal fa-search"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
                             <div
                                 class="main-menu-signup__login d-xl-flex d-none"
                             >
                                 <a href="login.html" class="main-menu__login">
-                                    Login
+                                    登入
                                 </a>
                                 <div class="center_slach d-xl-flex d-none">
                                     /
                                 </div>
                                 <a href="sign-up.html" class="main-menu__login">
-                                    Signup
+                                    註冊
                                 </a>
                             </div>
                             <a
                                 href="#"
                                 class="main-menu__toggler mobile-nav__toggler"
                             >
-                                <i class="fa fa-bars"></i>
+                                <i class="fa-solid fa-bars"></i>
                             </a>
                         </div>
                     </div>
@@ -217,18 +225,23 @@
                         >
                             <div class="content-block">
                                 <h2 class="h-61 bold lightest-black mb-16">
-                                    <span class="color-primary">Book</span> Your
-                                    Dream
-                                    <span class="color-primary">Flights</span>
-                                    Now!
+                                    <span class="color-primary">Elevate</span>
+                                    Your Experience
+                                    <span class="color-primary">With</span>
+                                    Sky's Sparkle!
                                 </h2>
                                 <p class="light dark-gray mb-24">
-                                    Lorem ipsum dolor sit amet consectetur.
-                                    Felis tristique pretium leo nisi at risus ac
-                                    enim.
+                                    讓 Sparkle AirLine 帶你暢遊世界各個角落!
                                 </p>
-                                <a href="flight-booking.html" class="cus-btn"
-                                    >Book Now</a
+                                <a
+                                    href="flight-booking.html"
+                                    class="cus-btn"
+                                    style="
+                                        font-family: 'Times New Roman', Times,
+                                            serif;
+                                        font-size: 20px;
+                                    "
+                                    >預定行程</a
                                 >
                             </div>
                         </div>
@@ -267,6 +280,11 @@
                                         class="cus-btn primary active"
                                         aria-current="true"
                                         data-bs-toggle="tab"
+                                        style="
+                                            font-family: 'Times New Roman',
+                                                Times, serif;
+                                            font-size: 25px;
+                                        "
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -289,10 +307,10 @@
                                                 ></rect>
                                             </defs>
                                         </svg>
-                                        Flights
+                                        預定行程
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a
                                         href="#hotel"
                                         class="cus-btn primary"
@@ -407,7 +425,7 @@
                                         </svg>
                                         Car Rentals
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="card-body tab-content">
@@ -425,7 +443,7 @@
                                                     aria-current="true"
                                                     data-bs-toggle="tab"
                                                 >
-                                                    Stopover
+                                                    購票
                                                 </a>
                                             </li>
                                             <li class="nav-item">
@@ -435,7 +453,7 @@
                                                     aria-current="false"
                                                     data-bs-toggle="tab"
                                                 >
-                                                    Manage Booking / Check in
+                                                    行程管理 / 網路報到
                                                 </a>
                                             </li>
                                             <li class="nav-item">
@@ -445,7 +463,7 @@
                                                     aria-current="false"
                                                     data-bs-toggle="tab"
                                                 >
-                                                    Flight Status
+                                                    班機動態
                                                 </a>
                                             </li>
                                         </ul>
@@ -473,7 +491,7 @@
                                                         <label
                                                             class="custom-control-label"
                                                             for="way"
-                                                            >One way</label
+                                                            >單程</label
                                                         >
                                                     </div>
                                                     <div class="radio-button">
@@ -486,10 +504,10 @@
                                                         <label
                                                             class="custom-control-label"
                                                             for="trip"
-                                                            >Round-trip</label
+                                                            >來回</label
                                                         >
                                                     </div>
-                                                    <div class="radio-button">
+                                                    <!-- <div class="radio-button">
                                                         <input
                                                             type="radio"
                                                             name="way"
@@ -501,7 +519,7 @@
                                                             for="city"
                                                             >Multi-City</label
                                                         >
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="booking-info mb-32">
                                                     <div
@@ -513,7 +531,7 @@
                                                             <label
                                                                 for="flightFrom"
                                                                 class="h-16 color-medium-gray"
-                                                                >From</label
+                                                                >出發地</label
                                                             >
                                                             <input
                                                                 type="text"
@@ -560,7 +578,7 @@
                                                             <label
                                                                 for="flightTo"
                                                                 class="h-16 color-medium-gray"
-                                                                >To</label
+                                                                >目的地</label
                                                             >
                                                             <input
                                                                 type="text"
@@ -585,7 +603,7 @@
                                                             <label
                                                                 for="flightDep"
                                                                 class="h-16 color-medium-gray"
-                                                                >Departing</label
+                                                                >出發日期</label
                                                             >
                                                             <input
                                                                 type="text"
@@ -600,7 +618,7 @@
                                                             <label
                                                                 for="flightTime"
                                                                 class="h-16 color-medium-gray"
-                                                                >Returning</label
+                                                                >回程日期</label
                                                             >
                                                             <input
                                                                 type="text"
@@ -615,8 +633,8 @@
                                                             <div
                                                                 class="h-16 color-medium-gray mb-2"
                                                             >
-                                                                Passengers and
-                                                                Class
+                                                                旅客人數 /
+                                                                艙等類型
                                                             </div>
                                                             <div
                                                                 class="seat-booking color-black"
@@ -625,10 +643,10 @@
                                                                     class="total-pasenger"
                                                                     >2</span
                                                                 >
-                                                                Passengers /
+                                                                旅客 /
                                                                 <span
                                                                     class="pasenger-class"
-                                                                    >Business</span
+                                                                    >商務艙</span
                                                                 >
                                                             </div>
 
@@ -638,7 +656,7 @@
                                                                 <h4
                                                                     class="color-black mb-32"
                                                                 >
-                                                                    Passenger
+                                                                    旅客人數
                                                                 </h4>
                                                                 <div
                                                                     class="passenger-box mb-24"
@@ -655,14 +673,12 @@
                                                                                 <h5
                                                                                     class="lightest-black"
                                                                                 >
-                                                                                    Adult
+                                                                                    成人
                                                                                 </h5>
                                                                                 <p
                                                                                     class="color-medium-gray light"
                                                                                 >
-                                                                                    Above
-                                                                                    12
-                                                                                    years.
+                                                                                    12歲以上
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -710,16 +726,12 @@
                                                                                 <h5
                                                                                     class="lightest-black"
                                                                                 >
-                                                                                    Child
+                                                                                    兒童
                                                                                 </h5>
                                                                                 <p
                                                                                     class="color-medium-gray light"
                                                                                 >
-                                                                                    2-11
-                                                                                    years
-                                                                                    on
-                                                                                    travel
-                                                                                    date.
+                                                                                    2-11歲
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -767,14 +779,13 @@
                                                                                 <h5
                                                                                     class="lightest-black"
                                                                                 >
-                                                                                    Infant
+                                                                                    嬰兒
                                                                                 </h5>
                                                                                 <p
                                                                                     class="color-medium-gray light"
                                                                                 >
-                                                                                    Below
-                                                                                    2
-                                                                                    years.
+                                                                                    0-1歲
+                                                                                    (不占座位)
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -810,17 +821,13 @@
                                                                 <p
                                                                     class="color-medium-gray light mb-32"
                                                                 >
-                                                                    Please note:
-                                                                    You can book
-                                                                    for a
-                                                                    maximum of
-                                                                    nine
-                                                                    passengers.
+                                                                    注意:
+                                                                    最多只能購買9張票
                                                                 </p>
                                                                 <h4
                                                                     class="color-black mb-32"
                                                                 >
-                                                                    Travel Class
+                                                                    選擇艙等
                                                                 </h4>
                                                                 <div
                                                                     class="radio-tile-group"
@@ -841,7 +848,7 @@
                                                                             <label
                                                                                 for="economy"
                                                                                 class="radio-tile-label"
-                                                                                >Economy</label
+                                                                                >經濟艙</label
                                                                             >
                                                                         </div>
                                                                     </div>
@@ -861,7 +868,7 @@
                                                                             <label
                                                                                 for="business"
                                                                                 class="radio-tile-label"
-                                                                                >Business</label
+                                                                                >商務艙</label
                                                                             >
                                                                         </div>
                                                                     </div>
@@ -881,8 +888,7 @@
                                                                             <label
                                                                                 for="firstClass"
                                                                                 class="radio-tile-label"
-                                                                                >First
-                                                                                Class</label
+                                                                                >頭等艙</label
                                                                             >
                                                                         </div>
                                                                     </div>
@@ -902,8 +908,7 @@
                                                                             <label
                                                                                 for="pre-eco"
                                                                                 class="radio-tile-label"
-                                                                                >Premium
-                                                                                Economy</label
+                                                                                >豪華經濟艙</label
                                                                             >
                                                                         </div>
                                                                     </div>
@@ -915,7 +920,7 @@
                                                 <div
                                                     class="row align-items-center"
                                                 >
-                                                    <div
+                                                    <!-- <div
                                                         class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-xl-0 mb-24"
                                                     >
                                                         <h5
@@ -993,7 +998,7 @@
                                                                 value="+"
                                                             />
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                     <div
                                                         class="col-xl-4 col-lg-6 col-md-6 col-sm-9"
                                                     >
@@ -1013,7 +1018,7 @@
                                                                             type="text"
                                                                             class="sel-input p-0"
                                                                             id="promoCode"
-                                                                            placeholder="Enter Promo Code"
+                                                                            placeholder="請輸入折扣號碼"
                                                                         />
                                                                         <div
                                                                             class="slector-wrapper"
@@ -1027,8 +1032,14 @@
                                                                 <button
                                                                     type="submit"
                                                                     class="cus-btn"
+                                                                    style="
+                                                                        font-family: 'Times New Roman',
+                                                                            Times,
+                                                                            serif;
+                                                                        font-size: 25px;
+                                                                    "
                                                                 >
-                                                                    Show Flight
+                                                                    查詢班機
                                                                     <svg
                                                                         xmlns="http://www.w3.org/2000/svg"
                                                                         width="24"
@@ -1075,7 +1086,7 @@
                                                             aria-current="true"
                                                             data-bs-toggle="tab"
                                                         >
-                                                            Manage Booking
+                                                            行程管理
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -1085,7 +1096,7 @@
                                                             aria-current="false"
                                                             data-bs-toggle="tab"
                                                         >
-                                                            Check in
+                                                            網路報到
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1112,7 +1123,7 @@
                                                                         class="row"
                                                                     >
                                                                         <div
-                                                                            class="col-lg-6 col-md-6 col-sm-6"
+                                                                            class="col-lg-4 col-md-4 col-sm-4"
                                                                         >
                                                                             <div
                                                                                 class="custom-sel-input-block v-2"
@@ -1122,12 +1133,12 @@
                                                                                     class="sel-input"
                                                                                     name="reference"
                                                                                     id="ref-name"
-                                                                                    placeholder="Booking Reference"
+                                                                                    placeholder="機票號碼"
                                                                                 />
                                                                             </div>
                                                                         </div>
                                                                         <div
-                                                                            class="col-lg-6 col-md-6 col-sm-6"
+                                                                            class="col-lg-4 col-md-4 col-sm-4"
                                                                         >
                                                                             <div
                                                                                 class="custom-sel-input-block m-0"
@@ -1137,7 +1148,22 @@
                                                                                     class="sel-input"
                                                                                     name="name"
                                                                                     id="last-name"
-                                                                                    placeholder="Last Name"
+                                                                                    placeholder="姓氏"
+                                                                                />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-4 col-md-4 col-sm-4"
+                                                                        >
+                                                                            <div
+                                                                                class="custom-sel-input-block m-0"
+                                                                            >
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="sel-input"
+                                                                                    name="name"
+                                                                                    id="first-name"
+                                                                                    placeholder="名字"
                                                                                 />
                                                                             </div>
                                                                         </div>
@@ -1150,9 +1176,14 @@
                                                                 <button
                                                                     type="submit"
                                                                     class="cus-btn"
+                                                                    style="
+                                                                        font-family: 'Times New Roman',
+                                                                            Times,
+                                                                            serif;
+                                                                        font-size: 20px;
+                                                                    "
                                                                 >
-                                                                    Check
-                                                                    Booking
+                                                                    確認
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -1243,7 +1274,7 @@
                                                             aria-current="true"
                                                             data-bs-toggle="tab"
                                                         >
-                                                            By Route
+                                                            依航線
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -1253,7 +1284,7 @@
                                                             aria-current="false"
                                                             data-bs-toggle="tab"
                                                         >
-                                                            By flight Number
+                                                            依航班號碼
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1283,7 +1314,7 @@
                                                                             type="text"
                                                                             class="sel-input auto-input"
                                                                             id="flightDepart"
-                                                                            placeholder="From"
+                                                                            placeholder="出發地"
                                                                         />
                                                                         <div
                                                                             class="slector-wrapper"
@@ -1299,7 +1330,7 @@
                                                                             type="text"
                                                                             class="sel-input auto-input"
                                                                             id="flightArrive"
-                                                                            placeholder="To"
+                                                                            placeholder="目的地"
                                                                         />
                                                                         <div
                                                                             class="slector-wrapper"
@@ -1326,8 +1357,14 @@
                                                                 <button
                                                                     type="submit"
                                                                     class="cus-btn"
+                                                                    style="
+                                                                        font-family: 'Times New Roman',
+                                                                            Times,
+                                                                            serif;
+                                                                        font-size: 20px;
+                                                                    "
                                                                 >
-                                                                    Show Flight
+                                                                    查詢
                                                                     <svg
                                                                         xmlns="http://www.w3.org/2000/svg"
                                                                         width="24"
@@ -1460,7 +1497,7 @@
                                 </div>
                             </div>
                             <!-- Hotel tab Start -->
-                            <div class="tab-pane" id="hotel">
+                            <!-- <div class="tab-pane" id="hotel">
                                 <form action="hotel-listing.html" method="post">
                                     <div class="row align-items-center">
                                         <div class="col-xxl-10 col-xl-12">
@@ -1750,11 +1787,11 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
+                            </div> -->
                             <!-- Hotel tab End -->
 
                             <!-- Car Rental tab Start -->
-                            <div class="tab-pane" id="rental">
+                            <!-- <div class="tab-pane" id="rental">
                                 <div class="card">
                                     <div class="card-header">
                                         <ul
@@ -2324,7 +2361,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Car Rental tab End -->
                         </div>
                     </div>
@@ -2352,11 +2389,9 @@
                                 />
                             </div>
                             <div class="text-box">
-                                <h4 class="lightest-black mb-8">
-                                    We are Now Available
-                                </h4>
+                                <h4 class="lightest-black mb-8">線上客服</h4>
                                 <p class="color-medium-gray">
-                                    Call +1 555 666 888 contact with us
+                                    有什麼問題都可以詢問我們
                                 </p>
                             </div>
                         </div>
@@ -2370,11 +2405,9 @@
                                 />
                             </div>
                             <div class="text-box">
-                                <h4 class="lightest-black mb-8">
-                                    International Flight
-                                </h4>
+                                <h4 class="lightest-black mb-8">航點</h4>
                                 <p class="color-medium-gray">
-                                    Call +1 555 666 888 contact with us
+                                    想了解更多航點內容嗎?
                                 </p>
                             </div>
                         </div>
@@ -2388,11 +2421,9 @@
                                 />
                             </div>
                             <div class="text-box">
-                                <h4 class="lightest-black mb-8">
-                                    Check Refund
-                                </h4>
+                                <h4 class="lightest-black mb-8">優惠折扣</h4>
                                 <p class="color-medium-gray">
-                                    Call +1 555 666 888 contact with us
+                                    這裡有最新的優惠活動! 不要錯過!
                                 </p>
                             </div>
                         </div>
@@ -2411,9 +2442,7 @@
             data-sal-easing="ease-in-out"
         >
             <div class="container-fluid">
-                <h3 class="lightest-black h-36 bold mb-40">
-                    Latest Flight Deals
-                </h3>
+                <h3 class="lightest-black h-36 bold mb-40">航點票價</h3>
                 <div class="flight-card-slider">
                     <div class="flight-deal-block bg-white p-24">
                         <div class="image-box mb-24">
@@ -2617,25 +2646,31 @@
                             />
                             <p class="h-61 bold mb-16">
                                 <span class="review-block bg-lightest-gray">
-                                    TRAVEL</span
+                                    讓</span
                                 >
                                 <span class="review-block bg-lightest-gray"
-                                    >All</span
+                                    >我們</span
                                 >
                             </p>
                             <p class="h-61 bold mb-16">
-                                <span class="bg-lightest-gray"> OVER</span>
+                                <span class="bg-lightest-gray"> 帶著您</span>
                                 <span class="bg-lightest-gray color-primary"
-                                    >The</span
+                                    >環遊</span
                                 >
                             </p>
                             <p class="h-61 bold mb-40">
                                 <span class="bg-lightest-gray color-primary">
-                                    WORLD</span
+                                    世界</span
                                 >
                             </p>
-                            <a href="flight-booking.html" class="cus-btn"
-                                >Booking Now</a
+                            <a
+                                href="flight-booking.html"
+                                class="cus-btn"
+                                style="
+                                    font-family: 'Times New Roman', Times, serif;
+                                    font-size: 20px;
+                                "
+                                >預定行程</a
                             >
                         </div>
                     </div>
@@ -2690,9 +2725,7 @@
                 <div
                     class="d-flex justify-content-between mb-40 flex-md-nowrap flex-wrap"
                 >
-                    <h3 class="fw-700 lightest-black mb-md-0 mb-3">
-                        Popular Global Travel Destinations
-                    </h3>
+                    <h3 class="fw-700 lightest-black mb-md-0 mb-3">熱門航點</h3>
                     <a href="hotel-listing.html" class="cus-btn">Show More</a>
                 </div>
                 <div class="row">
@@ -3193,10 +3226,16 @@
         >
             <div class="container-fluid">
                 <div class="d-flex justify-content-between mb-40">
-                    <h3 class="h-36 bold lightest-black p-0">
-                        Our Latest News
-                    </h3>
-                    <a href="blog-listing.html" class="cus-btn">Show More</a>
+                    <h3 class="h-36 bold lightest-black p-0">最新消息</h3>
+                    <a
+                        href="blog-listing.html"
+                        class="cus-btn"
+                        style="
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 20px;
+                        "
+                        >更多</a
+                    >
                 </div>
                 <div class="row">
                     <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 mb-24">
@@ -3669,7 +3708,9 @@
                         id="search"
                         placeholder="Search Here..."
                     />
-                    <button type="submit"><i class="fal fa-search"></i></button>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </form>
             </div>
         </div>
