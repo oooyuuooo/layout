@@ -15,7 +15,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-7 mb-lg-0 mb-48">
                     <div class="form-block">
                         <!-- <RouterLink class="color-primary h6 mb-30" to="/"><i class="fa-solid fa-circle-left"></i>&nbsp;&nbsp;回主頁面</RouterLink> -->
-                        <a href="/Index" class="color-primary h6 mb-30"><i class="fa-solid fa-circle-left"></i>&nbsp;&nbsp;回主頁面</a>
+                        <a href="/" class="color-primary h6 mb-30"><i class="fa-solid fa-circle-left"></i>&nbsp;&nbsp;回主頁面</a>
                         <h2 class="mb-30 light-black">創建帳號</h2>
                             <div class="google mb-24">
                                 <h6 class="color-white"><a href="" class="link-btn mb-24 mb-sm-0"> 使用 Google 創建帳號&nbsp;<img src="../moban7664/static/picture/google-icon.png" alt=""></a></h6>

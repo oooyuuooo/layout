@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Preloader
     preloader: function () {
       setTimeout(function () {
-        document.getElementById("preloader").style.display = "none";
+        $("#preloader").hide("slow");
       }, 2000);
     },
 

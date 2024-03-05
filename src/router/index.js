@@ -4,6 +4,8 @@ import IndexView from '../views/IndexView.vue'
 import EventList from '../components/EventList.vue'
 import Contact from '../views/ContactView.vue'
 import FlightSearch from '../views/FlightSearchView.vue'
+import BookingView from '../views/BookingView.vue'
+import DetailView from '@/views/DetailView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +15,7 @@ const router = createRouter({
       name: 'layout',
       component: Layout,
       children:[{
-        path: '/Index',
+        path: '/',
         name: 'Index',
         component:IndexView
       },
@@ -31,6 +33,16 @@ const router = createRouter({
         path:'/FlightSearch',
         name:'FlightSearch',
         component:FlightSearch
+      },
+      {
+        path:'/Booking',
+        name:'Booking',
+        component:BookingView
+      },
+      {
+        path:'/Detail',
+        name:'Detail',
+        component:DetailView
       },
     ],
     },

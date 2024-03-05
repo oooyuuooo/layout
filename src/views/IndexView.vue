@@ -1,9 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 <template>
     <!-- Main Wrapper Start -->
-    
+
     <div id="main-wrapper" class="main-wrapper mr-4">
         <!-- Hero Banner start -->
         <section class="hero-banner-1">
@@ -379,11 +377,11 @@
                                                                 >
                                                                     <path
                                                                         d="M23.6804 6.07409L18.2259 0.619583C17.7999 0.193537 17.1092 0.193537 16.6831 0.619583C16.2571 1.04563 16.2571 1.73628 16.6831 2.16233L20.2754 5.75464H1.09096C0.488472 5.75464 3.51626e-05 6.24307 3.51626e-05 6.84556C3.51626e-05 7.44804 0.488472 7.93648 1.09096 7.93648H20.2754L16.6832 11.5287C16.2571 11.9548 16.2571 12.6455 16.6832 13.0715C16.8961 13.2845 17.1753 13.391 17.4545 13.391C17.7337 13.391 18.0129 13.2845 18.2258 13.0714L23.6804 7.61688C24.1064 7.19084 24.1064 6.50013 23.6804 6.07409Z"
-                                                                        fill="#4D73FC"
+                                                                        fill="rgb(54, 84, 134)"
                                                                     ></path>
                                                                     <path
                                                                         d="M22.9091 16.6637H3.72462L7.31683 13.0714C7.74288 12.6453 7.74288 11.9547 7.31683 11.5286C6.89088 11.1026 6.20013 11.1026 5.77409 11.5286L0.319535 16.9831C-0.106512 17.4092 -0.106512 18.0998 0.319535 18.5259L5.77404 23.9804C5.98713 24.1935 6.26627 24.3 6.54546 24.3C6.82465 24.3 7.10388 24.1935 7.31679 23.9804C7.74283 23.5544 7.74283 22.8637 7.31679 22.4377L3.72457 18.8455H22.9091C23.5116 18.8455 24 18.357 24 17.7546C24 17.1521 23.5116 16.6637 22.9091 16.6637Z"
-                                                                        fill="#4D73FC"
+                                                                        fill="rgb(54, 84, 134)"
                                                                     ></path>
                                                                 </g>
                                                                 <defs>
@@ -1059,7 +1057,7 @@
                                                                                     name="name"
                                                                                     id="lasName"
                                                                                     placeholder="姓氏"
-                                                                                />                                                                                
+                                                                                />
                                                                             </div>
                                                                         </div>
                                                                         <div
@@ -1074,7 +1072,7 @@
                                                                                     name="name"
                                                                                     id="firstName"
                                                                                     placeholder="名字"
-                                                                                />                                                                                
+                                                                                />
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -2229,6 +2227,7 @@
                                 <img
                                     src="../moban7664/static/picture/benefit-1.png"
                                     alt=""
+                                    style="color: rgb(54, 84, 134)"
                                 />
                             </div>
                             <div class="text-box">
@@ -2483,9 +2482,10 @@
                     >
                         <div class="left-content">
                             <img
-                                src="../moban7664/static/picture/logo.png"
+                                src="../sparkle/sparkle/SparkleLogoHorizontal.png"
                                 alt=""
                                 class="mb-40"
+                                style="width: 250px"
                             />
                             <p class="h-61 bold mb-16">
                                 <span class="review-block bg-lightest-gray">
@@ -3326,32 +3326,5 @@
             </div>
         </section>
         <!-- Blog Area End -->
-
-
-
-        <!-- modal-popup area Start  -->
-        <div class="search-popup">
-            <div class="search-popup__overlay search-toggler"></div>
-            <div class="search-popup__content">
-                <form
-                    role="search"
-                    method="get"
-                    class="search-popup__form"
-                    action="index.html"
-                >
-                    <input
-                        type="text"
-                        id="search"
-                        placeholder="Search Here..."
-                    />
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <!-- search-popup end-->
     </div>
 </template>
-
-
