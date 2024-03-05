@@ -6865,7 +6865,10 @@ footer .social-link ul li:hover {
   border-radius: 0.25em;
 }
 .signup .country-selector .select::after {
-  content: "\f078";
+  content: "🢓";
+  margin-top: 14px;
+  font-size: 50px;
+  color: rgb(189, 189, 189);
   position: absolute;
   top: 0;
   right: 0;

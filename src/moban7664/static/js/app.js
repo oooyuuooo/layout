@@ -319,8 +319,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     jsSlider: function () {
-      if (document.querySelector(".js-slider")) {
-        document.querySelector(".js-slider").ionRangeSlider({
+      if ($(".js-slider").length) {
+        $(".js-slider").ionRangeSlider({
           skin: "big",
           type: "double",
           grid: false,
@@ -328,6 +328,7 @@ document.addEventListener("DOMContentLoaded", function () {
           max: 999,
           from: 0,
           to: 999,
+          // postfix: '$',
           hide_min_max: true,
           hide_from_to: true,
         });
