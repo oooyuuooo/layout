@@ -2,7 +2,7 @@
 <template>
     <!-- Main Wrapper Start -->
 
-    <div id="main-wrapper" class="main-wrapper mr-4">
+    
         <!-- Hero Banner start -->
         <section class="hero-banner-1">
             <div class="container-fluid">
@@ -3326,5 +3326,5 @@
             </div>
         </section>
         <!-- Blog Area End -->
-    </div>
+    
 </template>

@@ -54,7 +54,7 @@ ol.list-style {
 
 ul.list-style li::marker,
 ol.list-style li::marker {
-  color: #365486;
+  color: #DCBF85;
 }
 
 .unstyled {
@@ -383,7 +383,7 @@ a {
   color: unset;
 }
 a:hover {
-  color: #365486;
+  color: #DCBF85;
   transition: all 0.5s ease-in-out;
 }
 
@@ -430,12 +430,12 @@ strong {
   font-weight: 400;
 }
 .pagination li a.active {
-  background: #365486;
+  background: #DCBF85;
   color: #0B0C0D;
 }
 .pagination li a:hover {
   color: #0B0C0D;
-  background: #365486;
+  background: #DCBF85;
 }
 
 .social-icons {
@@ -454,30 +454,30 @@ strong {
   transition: all 0.5s ease-in-out;
 }
 .social-icons li a:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 .social-icons li a:hover svg {
-  stroke: #365486;
-  stroke-width: #365486;
+  stroke: #DCBF85;
+  stroke-width: #DCBF85;
 }
 
 /*-------------------------
 Helpers
 -------------------------*/
 .color-primary {
-  color: #365486 !important;
+  color: #DCBF85 !important;
 }
 
 .color-sec {
-  color: #D4B499 !important;
+  color: #365486 !important;
 }
 
 .bg-primary {
-  background-color: #365486 !important;
+  background-color: #DCBF85 !important;
 }
 
 .bg-sec {
-  background-color: #D4B499 !important;
+  background-color: #365486 !important;
 }
 
 .color-white {
@@ -978,7 +978,7 @@ Helpers
   width: 66px;
   height: 66px;
   border: 0;
-  background: #365486;
+  background: #DCBF85;
   color: #F8F8FF;
   display: flex;
   justify-content: center;
@@ -2021,7 +2021,7 @@ Elements
   font-weight: 600;
   top: 60%;
   position: absolute;
-  color: #365486;
+  color: #DCBF85;
 }
 #preloader .loader .iata_code.departure_city {
   left: 55px;
@@ -2149,7 +2149,7 @@ Elements
   height: 120px;
   font-size: 100px;
   padding: 11px 0;
-  background: #365486;
+  background: #DCBF85;
   color: #F8F8FF;
   text-align: center;
   opacity: 0;
@@ -2191,7 +2191,7 @@ Elements
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
   border: none;
-  background: #365486;
+  background: #DCBF85;
   box-shadow: 4px 4px 10px 0px rgba(77, 115, 252, 0.3);
   color: #F8F8FF;
 }
@@ -2293,7 +2293,7 @@ Elements
   }
 }
 .cus-btn.primary.active, .cus-btn.primary:hover {
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
   box-shadow: 4px 4px 10px 0px rgba(77, 115, 252, 0.3);
 }
@@ -2309,7 +2309,7 @@ Elements
   transition: all 0.5s ease-in-out;
 }
 .cus-btn.grey:hover {
-  background: #365486;
+  background: #DCBF85;
 }
 .cus-btn.dark {
   background-color: #212627;
@@ -2321,7 +2321,7 @@ Elements
   color: #212627;
 }
 .cus-btn.btn-sec:hover {
-  background-color: #D4B499;
+  background-color: #365486;
   color: #F8F8FF;
 }
 
@@ -2347,7 +2347,7 @@ Elements
   }
 }
 .light-btn.primary i {
-  color: #365486;
+  color: #DCBF85;
 }
 .light-btn.primary:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
@@ -2372,7 +2372,7 @@ Elements
   transition: all 0.5s ease-in-out;
 }
 .cus-btn-2:hover {
-  border-color: #365486;
+  border-color: #DCBF85;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
 }
 .cus-btn-2.btn-sec {
@@ -2384,8 +2384,8 @@ Elements
   box-shadow: none;
 }
 .cus-btn-2.btn-sec:hover {
-  background: #D4B499;
-  border: 1px solid #D4B499;
+  background: #365486;
+  border: 1px solid #365486;
   color: #F8F8FF;
 }
 .cus-btn-2.btn-sec.width-237 {
@@ -2570,7 +2570,7 @@ select::-ms-expand {
   transition: 0.25s all ease;
 }
 .select:hover::after {
-  color: #365486;
+  color: #DCBF85;
 }
 
 .inputGroup {
@@ -2635,17 +2635,17 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked {
-  accent-color: #365486;
+  accent-color: #DCBF85;
 }
 
 input[type=checkbox]:checked {
-  accent-color: #365486;
-  background-color: #365486;
+  accent-color: #DCBF85;
+  background-color: #DCBF85;
   border-radius: 10px;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background: #365486;
+  background: #DCBF85;
 }
 
 input[type=radio] {
@@ -2654,7 +2654,7 @@ input[type=radio] {
 }
 
 input[type=radio]:checked {
-  accent-color: #365486;
+  accent-color: #DCBF85;
 }
 
 .alert-message {
@@ -2805,7 +2805,7 @@ input[type=radio]:checked {
   width: 100%;
 }
 .card .card-header .nav-tabs li.flight-sec a.active, .card .card-header .nav-tabs li.flight-sec a:hover {
-  background: #365486;
+  background: #DCBF85;
 }
 @media (max-width: 1099px) {
   .card .card-header .nav-tabs li.flight-sec {
@@ -2873,7 +2873,7 @@ textarea {
 }
 
 .radio-button label {
-  color: #365486;
+  color: #DCBF85;
   font-family: "Inter", sans-serif;
   font-size: 21px;
   font-weight: 500;
@@ -2912,7 +2912,7 @@ textarea {
   top: 0px;
   width: 28px;
   height: 28px;
-  border: 2px solid #365486;
+  border: 2px solid #DCBF85;
   border-radius: 100%;
   background: #F8F8FF;
 }
@@ -2926,11 +2926,11 @@ textarea {
 }
 
 .radio-button input:not(:checked) + label:before {
-  border: 2px solid #365486;
+  border: 2px solid #DCBF85;
 }
 @media (max-width: 674px) {
   .radio-button input:not(:checked) + label:before {
-    border: 1px solid #365486;
+    border: 1px solid #DCBF85;
   }
 }
 
@@ -2939,7 +2939,7 @@ textarea {
   content: "";
   width: 16px;
   height: 16px;
-  background: #365486;
+  background: #DCBF85;
   position: absolute;
   top: 6px;
   left: 6px;
@@ -2984,7 +2984,7 @@ textarea {
   width: 5px;
   height: 12px;
   z-index: 10;
-  border: solid #365486;
+  border: solid #DCBF85;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -3073,7 +3073,7 @@ textarea {
 .modal .modal-dialog .modal-content .close {
   border: 0;
   background: transparent;
-  color: #365486;
+  color: #DCBF85;
   padding: 10px 20px 0px 10px;
 }
 .modal .modal-dialog .modal-content .close span {
@@ -3174,12 +3174,12 @@ textarea {
 }
 .main-menu .main-menu__left .main-menu__nav .main-menu__list > li > a:hover,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list > li > a:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 .main-menu .main-menu__left .main-menu__nav .main-menu__list > li.current, .main-menu .main-menu__left .main-menu__nav .main-menu__list > li:hover,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list > li.current,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list > li:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 .main-menu .main-menu__left .main-menu__nav .main-menu__list li ul,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list li ul {
@@ -3238,7 +3238,7 @@ textarea {
 .main-menu .main-menu__left .main-menu__nav .main-menu__list li ul li.current > a, .main-menu .main-menu__left .main-menu__nav .main-menu__list li ul li:hover > a,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list li ul li.current > a,
 .main-menu .main-menu__left .main-menu__nav .stricky-header .main-menu__list li ul li:hover > a {
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
 }
 .main-menu .main-menu__left .main-menu__nav .main-menu__list li ul li.current > a::after, .main-menu .main-menu__left .main-menu__nav .main-menu__list li ul li:hover > a::after,
@@ -3304,7 +3304,7 @@ textarea {
   transition: all 500ms ease;
 }
 .main-menu__right .main-menu__login:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 .main-menu__right .center_slach {
   font-size: 21px;
@@ -3352,7 +3352,7 @@ textarea {
   }
 }
 .mobile-nav__toggler:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 
 /*--------------------------------------------------------------
@@ -3455,12 +3455,12 @@ textarea {
   transition: 500ms;
 }
 .mobile-nav__wrapper .mobile-nav__content .main-menu__list li a.expanded {
-  color: #365486;
+  color: #DCBF85;
 }
 .mobile-nav__wrapper .mobile-nav__content .main-menu__list li a button {
   width: 30px;
   height: 30px;
-  background-color: #365486;
+  background-color: #DCBF85;
   border: none;
   outline: none;
   color: #F8F8FF;
@@ -3498,7 +3498,7 @@ textarea {
   margin-left: 20px;
 }
 .mobile-nav__social a:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 
 .mobile-nav__contact {
@@ -3522,13 +3522,13 @@ textarea {
   transition: 500ms;
 }
 .mobile-nav__contact li a:hover {
-  color: #365486;
+  color: #DCBF85;
 }
 .mobile-nav__contact li i {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #365486;
+  background-color: #DCBF85;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3578,12 +3578,12 @@ footer .social-link ul {
   gap: 16px;
 }
 footer .social-link ul li a {
-  background-color: #365486;
+  background-color: #DCBF85;
   padding: 12px;
   border-radius: 10px;
 }
 footer .social-link ul li:hover {
-  background-color: #365486;
+  background-color: #DCBF85;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
@@ -3816,7 +3816,7 @@ footer .social-link ul li:hover {
   border-radius: 5px;
 }
 .booking .content .card .card-body .tab-pane .card .card-header .nav-tabs li a.active, .booking .content .card .card-body .tab-pane .card .card-header .nav-tabs li a:hover {
-  background: #D4B499;
+  background: #365486;
 }
 .booking .content .card .card-body .tab-pane .card .card-header .nav-tabs li.v-2 {
   width: calc(50% - 1px);
@@ -3840,7 +3840,7 @@ footer .social-link ul li:hover {
   }
 }
 .booking .content .card .card-body .booking-bar .nav-item .nav-link.active {
-  border-bottom: 2px solid #D4B499;
+  border-bottom: 2px solid #365486;
   transition: all 0.5s ease-in-out;
   background: transparent;
 }
@@ -3917,7 +3917,7 @@ footer .social-link ul li:hover {
 .booking .content .booking-info .custom-sel-input-block.location-select i {
   position: absolute;
   bottom: 0;
-  color: #365486;
+  color: #DCBF85;
   font-size: 24px;
 }
 .booking .content .booking-info .input-date-picker .sel-input,
@@ -4038,7 +4038,7 @@ footer .social-link ul li:hover {
 .booking .content .booking-info .input-date-picker i,
 .booking .content .booking-info .custom-sel-input-block i {
   font-size: 21px;
-  color: #365486;
+  color: #DCBF85;
 }
 @media (max-width: 1199px) {
   .booking .content .booking-info .arrows {
@@ -4160,7 +4160,7 @@ footer .social-link ul li:hover {
   cursor: pointer;
 }
 .radio-tile-group .input-container .radio-button:checked + .radio-tile {
-  background: #365486;
+  background: #DCBF85;
   border: 1px solid #212627;
   color: white;
   transition: all 0.5s ease-in-out;
@@ -4284,7 +4284,7 @@ footer .social-link ul li:hover {
   }
 }
 .radio-tile-group .input-container .radio-tile-label.departure-radio {
-  color: #365486;
+  color: #DCBF85;
 }
 .radio-tile-group .input-container .radio-tile-label.wizard-label {
   font-size: 27px;
@@ -4845,7 +4845,7 @@ footer .social-link ul li:hover {
 }
 .news-blog .nav .nav-item .nav-link.active {
   color: #F8F8FF;
-  background: #365486;
+  background: #DCBF85;
   transition: all 0.5s ease-in-out;
   border: 0px;
   padding: 16px 24px;
@@ -5086,7 +5086,7 @@ footer .social-link ul li:hover {
 }
 .time-detail .flight-date {
   padding: 12px;
-  background: #D4B499;
+  background: #365486;
   border-radius: 5px;
   display: inline-flex;
   color: #F8F8FF;
@@ -5158,7 +5158,7 @@ footer .social-link ul li:hover {
   top: 12px;
   height: 3px;
   border: 0;
-  background: #365486;
+  background: #DCBF85;
   box-shadow: none;
   cursor: pointer;
 }
@@ -5168,8 +5168,8 @@ footer .social-link ul li:hover {
   top: 1px;
   height: 24px;
   width: 24px;
-  background-color: #365486;
-  background: #365486;
+  background-color: #DCBF85;
+  background: #DCBF85;
   border: 0;
   border-radius: 24px;
   box-shadow: none;
@@ -5283,7 +5283,7 @@ footer .social-link ul li:hover {
 .hotel-sidebar .contact-form .hotel-info .custom-sel-input-block.location-select i {
   position: absolute;
   bottom: 0;
-  color: #365486;
+  color: #DCBF85;
   font-size: 24px;
 }
 .hotel-sidebar .contact-form .hotel-info .input-date-picker.location-select::after,
@@ -5412,7 +5412,7 @@ footer .social-link ul li:hover {
 .hotel-sidebar .contact-form .hotel-info .input-date-picker i,
 .hotel-sidebar .contact-form .hotel-info .custom-sel-input-block i {
   font-size: 21px;
-  color: #365486;
+  color: #DCBF85;
 }
 .hotel-sidebar .contact-form .hotel-info .seat-booking {
   font-weight: 500;
@@ -5469,7 +5469,7 @@ footer .social-link ul li:hover {
   top: 12px;
   height: 3px;
   border: 0;
-  background: #365486;
+  background: #DCBF85;
   box-shadow: none;
   cursor: pointer;
 }
@@ -5478,8 +5478,8 @@ footer .social-link ul li:hover {
   top: 1px;
   height: 24px;
   width: 24px;
-  background-color: #365486;
-  background: #365486;
+  background-color: #DCBF85;
+  background: #DCBF85;
   border: 0;
   border-radius: 24px;
   box-shadow: none;
@@ -5580,7 +5580,7 @@ footer .social-link ul li:hover {
 }
 .paginations ul li:hover {
   transition: all 0.5s ease-in-out;
-  background: #365486;
+  background: #DCBF85;
   color: #F8F8FF;
   cursor: pointer;
 }
@@ -5589,14 +5589,14 @@ footer .social-link ul li:hover {
   color: #F8F8FF;
 }
 .paginations ul li.active {
-  background: #365486;
+  background: #DCBF85;
   color: #F8F8FF;
 }
 .paginations ul li.active a {
   color: #F8F8FF;
 }
 .paginations ul li.arrow a i {
-  color: #365486;
+  color: #DCBF85;
 }
 .paginations ul li.arrow:hover a i {
   color: #F8F8FF;
@@ -5629,7 +5629,7 @@ footer .social-link ul li:hover {
   width: fit-content;
   transition: all 0.5s ease-in-out;
   padding: 16px 32px;
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
   border-radius: 10px;
   border: 0px;
@@ -5723,7 +5723,7 @@ footer .social-link ul li:hover {
   }
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item.activated .nav-link {
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
   border: 0;
   padding: 5px;
@@ -5741,7 +5741,7 @@ footer .social-link ul li:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item.activated:is(.activated) i {
@@ -5751,8 +5751,8 @@ footer .social-link ul li:hover {
   display: none;
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item.active .nav-link {
-  background: #365486;
-  border: 1px solid #365486;
+  background: #DCBF85;
+  border: 1px solid #DCBF85;
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item.active .nav-link span {
   color: #F8F8FF;
@@ -5786,7 +5786,7 @@ footer .social-link ul li:hover {
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item .nav-link.active span {
   color: #F8F8FF;
-  background: #365486;
+  background: #DCBF85;
   z-index: 2;
   display: none;
 }
@@ -5810,7 +5810,7 @@ footer .social-link ul li:hover {
   padding-right: 0;
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item .nav-link.active .num {
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
   border: 0;
 }
@@ -5824,7 +5824,7 @@ footer .social-link ul li:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
-  background-color: #365486;
+  background-color: #DCBF85;
   color: #F8F8FF;
 }
 .flight-booking .booking-form .form-wizard-header .nav .nav-item .nav-link:is(.done) i {
@@ -5869,7 +5869,7 @@ footer .social-link ul li:hover {
 }
 .flight-booking .booking-form .detail-form .gender-select .select-1::before {
   content: "\f2e7";
-  color: #365486;
+  color: #DCBF85;
   position: absolute;
   top: 0;
   left: 0;
@@ -5892,7 +5892,7 @@ footer .social-link ul li:hover {
   transition: 0.25s all ease;
 }
 .flight-booking .booking-form .detail-form .gender-select .select-1:hover::after {
-  color: #365486;
+  color: #DCBF85;
 }
 .flight-booking .booking-form .detail-form select {
   -webkit-appearance: none;
@@ -5925,7 +5925,7 @@ footer .social-link ul li:hover {
 }
 .flight-booking .booking-form .detail-form .select-1::before {
   content: "🍽";
-  color: #365486;
+  color: #DCBF85;
   position: absolute;
   top: 0;
   left: 0;
@@ -5950,7 +5950,7 @@ footer .social-link ul li:hover {
   transition: 0.25s all ease;
 }
 .flight-booking .booking-form .detail-form .select-1:hover::after {
-  color: #365486;
+  color: #DCBF85;
 }
 .flight-booking .booking-form .detail-form select {
   -webkit-appearance: none;
@@ -5983,7 +5983,7 @@ footer .social-link ul li:hover {
 }
 .flight-booking .booking-form .detail-form .select-2::before {
   content: "\f193";
-  color: #365486;
+  color: #DCBF85;
   position: absolute;
   top: 0;
   left: 0;
@@ -6006,7 +6006,7 @@ footer .social-link ul li:hover {
   transition: 0.25s all ease;
 }
 .flight-booking .booking-form .detail-form .select-2:hover::after {
-  color: #365486;
+  color: #DCBF85;
 }
 .flight-booking .card-select {
   position: relative;
@@ -6116,7 +6116,7 @@ footer .social-link ul li:hover {
 .hotel-listing .hotel-block .rating-number {
   padding: 12px;
   border-radius: 5px;
-  background: #365486;
+  background: #DCBF85;
   color: #F8F8FF;
 }
 .hotel-listing .hotel-block:hover .image-box img {
@@ -6166,7 +6166,7 @@ footer .social-link ul li:hover {
 }
 .hotel-detail-sec .rating-star i {
   font-size: 24px;
-  color: #D4B499;
+  color: #365486;
 }
 .hotel-detail-sec .facilities {
   display: flex;
@@ -6253,7 +6253,7 @@ footer .social-link ul li:hover {
 .hotel-availability .availability-info .custom-sel-input-block.location-select i {
   position: absolute;
   bottom: 0;
-  color: #365486;
+  color: #DCBF85;
   font-size: 24px;
 }
 .hotel-availability .availability-info .input-date-picker .sel-input,
@@ -6374,7 +6374,7 @@ footer .social-link ul li:hover {
 .hotel-availability .availability-info .input-date-picker i,
 .hotel-availability .availability-info .custom-sel-input-block i {
   font-size: 21px;
-  color: #365486;
+  color: #DCBF85;
 }
 .hotel-availability .availability-info .seat-booking {
   font-size: 21px;
@@ -6529,7 +6529,7 @@ footer .social-link ul li:hover {
 .hotel-booking-time .custom-sel-input-block.location-select i {
   position: absolute;
   bottom: 0;
-  color: #365486;
+  color: #DCBF85;
   font-size: 24px;
 }
 .hotel-booking-time .input-date-picker .sel-input,
@@ -6638,7 +6638,7 @@ footer .social-link ul li:hover {
 .hotel-booking-time .input-date-picker i,
 .hotel-booking-time .custom-sel-input-block i {
   font-size: 21px;
-  color: #365486;
+  color: #DCBF85;
 }
 
 .detail-form textarea {
@@ -6658,7 +6658,7 @@ footer .social-link ul li:hover {
 .brand-logo .rating {
   padding: 8px 24px;
   border-radius: 5px;
-  background: #365486;
+  background: #DCBF85;
 }
 
 .pricing-area .pre-reg {
@@ -6771,7 +6771,7 @@ footer .social-link ul li:hover {
   border-radius: 20px;
 }
 .signup .form-block .google {
-  background: #FC4D4D;
+  background: #6c91c2;
   border: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
@@ -6780,7 +6780,7 @@ footer .social-link ul li:hover {
   color: #F8F8FF;
 }
 .signup .form-block .facebook {
-  background: #365486;
+  background: #DCBF85;
   border: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
@@ -6884,7 +6884,7 @@ footer .social-link ul li:hover {
   transition: 0.25s all ease;
 }
 .signup .country-selector .select:hover::after {
-  color: #365486;
+  color: #DCBF85;
 }
 .signup .input-date-picker .picker {
   top: 42px;
